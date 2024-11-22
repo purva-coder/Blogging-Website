@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blogging Website</h1>
+
+        <!-- Add User Section -->
+        <div class="section" id="addUserSection">
+            <h2>Add User</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <button type="submit">Add User</button>
+            </form>
+        </div>
+
+        <!-- Add Post Section -->
+        <div class="section" id="addPostSection">
+            <h2>Add Post</h2>
+            <form>
+                <label for="userId">User ID:</label>
+                <input type="number" id="userId" placeholder="Enter your User ID" required>
+
+                <label for="title">Post Title:</label>
+                <input type="text" id="title" placeholder="Enter post title" required>
+
+                <label for="content">Post Content:</label>
+                <textarea id="content" rows="5" placeholder="Write your post here..." required></textarea>
+
+                <button type="submit">Add Post</button>
+            </form>
+        </div>
+
+        <!-- Add Comment Section -->
+        <div class="section" id="addCommentSection">
+            <h2>Add Comment</h2>
+            <form>
+                <label for="postId">Post ID:</label>
+                <input type="number" id="postId" placeholder="Enter the Post ID" required>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="3" placeholder="Write your comment here..." required></textarea>
+
+                <button type="submit">Add Comment</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Blogging Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
